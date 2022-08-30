@@ -26,7 +26,7 @@ public class ParkingSpotModel implements Serializable {
     private String number;
 
     @Column(unique = true, length = 7)
-    private String licensePlateCar;
+    private String plateCar;
 
     @Column(length = 70)
     private String brandCar;
@@ -41,7 +41,7 @@ public class ParkingSpotModel implements Serializable {
     private LocalDateTime registrationDate;
 
     @Column(length = 130)
-    private String responsibleName;
+    private String owner;
 
     @Column(length = 30)
     private String apartment;
